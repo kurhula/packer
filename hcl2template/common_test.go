@@ -125,9 +125,9 @@ func testParse(t *testing.T, tests []parseTest) {
 				cmpopts.IgnoreUnexported(
 					cty.Value{},
 					cty.Type{},
-					CoreHCL2Build{},
-					CoreHCL2BuildProvisioner{},
-					CoreHCL2BuildPostProcessor{},
+					packer.CoreBuild{},
+					packer.CoreBuildProvisioner{},
+					packer.CoreBuildPostProcessor{},
 					null.Builder{},
 				),
 			); diff != "" {
